@@ -22,4 +22,16 @@ public class Stack<T> {
         head = newNode;
     }
 
+    // return top element of the stack
+    public T peek(){
+        return head.data;
+    }
+
+    // remove top element from the stack
+    public void pop(){
+        if(head != null)head = head.next;
+        if(size > 0)size--;
+    }
+
+
 }
