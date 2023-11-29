@@ -18,5 +18,12 @@ public class Main {
         System.out.println(UC2.peek()); // expecting 56
         UC2.pop();
         System.out.println(UC2.peek()); // expecting 30
+
+        //Ability to create a Queue of 56->30->70
+        Queue<Integer> UC3 = new Queue<>();
+        UC3.enqueue(56);
+        UC3.enqueue(30);
+        UC3.enqueue(70);
+        
     }
 }
