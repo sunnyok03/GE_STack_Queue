@@ -24,6 +24,12 @@ public class Main {
         UC3.enqueue(56);
         UC3.enqueue(30);
         UC3.enqueue(70);
-        
+
+        //Ability to dequeue from the beginning
+        Queue<Integer> UC4 = new Queue<>();
+        UC3.enqueue(56);
+        UC3.enqueue(30);
+        UC3.enqueue(70);
+        UC4.dequeue();
     }
 }

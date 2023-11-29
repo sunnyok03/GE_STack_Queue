@@ -17,8 +17,19 @@ public class Queue<T> {
             tail = newNode;
             return;
         }
-
+        // add new element to last of linked list
         tail.next = newNode;
         tail = newNode;
+    }
+
+    public void dequeue(){
+        if(head == null || tail == null){
+            head = null;
+            tail = null;
+            size = 0;
+            return;
+        }
+        if(size > 0)size--;
+        head = head.next;
     }
 }
